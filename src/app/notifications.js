@@ -20,7 +20,7 @@ export default class VueNotifications {
         this.#app = app;
 
         // init push notifications
-        this.#pushNotificationsData = JSON.parse( window.localStorage.getItem( PUSH_NOTIFICATIONS_KEY ) ) || {
+        this.#pushNotificationsData = JSON.parse( globalThis.localStorage.getItem( PUSH_NOTIFICATIONS_KEY ) ) || {
             "enabled": {},
         };
 
@@ -234,6 +234,6 @@ export default class VueNotifications {
     }
 
     #storePushNotificationsData () {
-        window.localStorage.setItem( PUSH_NOTIFICATIONS_KEY, JSON.stringify( this.#pushNotificationsData ) );
+        globalThis.localStorage.setItem( PUSH_NOTIFICATIONS_KEY, JSON.stringify( this.#pushNotificationsData ) );
     }
 }

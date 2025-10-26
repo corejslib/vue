@@ -24,7 +24,7 @@ class Handler {
         const url = event.action || "/",
             tag = event.notification.tag;
 
-        const clients = await self.clients.matchAll( {
+        const clients = await globalThis.clients.matchAll( {
             "includeUncontrolled": true,
         } );
 
@@ -48,7 +48,7 @@ class Handler {
 
         // client not found, open new window
         else {
-            client = self.clients.openWindow( url );
+            client = globalThis.clients.openWindow( url );
         }
 
         // log click

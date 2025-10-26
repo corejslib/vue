@@ -23,15 +23,15 @@ export default class Theme {
         this.#app = app;
 
         // listen for device dark mode change
-        window.matchMedia( "(prefers-color-scheme: dark)" ).addEventListener( "change", e => {
+        globalThis.matchMedia( "(prefers-color-scheme: dark)" ).addEventListener( "change", e => {
             if ( !this.#reactive.deviceDarkMode ) return;
 
             this.#setDarkMode( e.matches );
         } );
 
         // darkMode
-        this.#reactive.deviceDarkMode = window.localStorage.getItem( DEVICE_DARK_MODE_KEY );
-        this.#reactive.darkMode = window.localStorage.getItem( DARK_MODE_KEY );
+        this.#reactive.deviceDarkMode = globalThis.localStorage.getItem( DEVICE_DARK_MODE_KEY );
+        this.#reactive.darkMode = globalThis.localStorage.getItem( DARK_MODE_KEY );
 
         // device dark mode is not set
         if ( this.#reactive.deviceDarkMode == null ) {
@@ -78,7 +78,7 @@ export default class Theme {
         }
 
         // theme
-        this.#reactive.theme = window.localStorage.getItem( THEME_KEY );
+        this.#reactive.theme = globalThis.localStorage.getItem( THEME_KEY );
 
         if ( this.#reactive.theme == null ) {
             this.#reactive.theme = DEFAULT_THEME;
@@ -132,7 +132,7 @@ export default class Theme {
         this.#reactive.theme.base = base;
         this.#reactive.theme.accent = accent;
 
-        window.localStorage.setItem( THEME_KEY, JSON.stringify( this.#reactive.theme ) );
+        globalThis.localStorage.setItem( THEME_KEY, JSON.stringify( this.#reactive.theme ) );
 
         this.#events.emit( "themeChange", this.#reactive.theme );
     }
@@ -158,7 +158,7 @@ export default class Theme {
 
     // private
     #getDeviceDarkMode () {
-        return window.matchMedia && window.matchMedia( "(prefers-color-scheme: dark)" ).matches;
+        return globalThis.matchMedia && globalThis.matchMedia( "(prefers-color-scheme: dark)" ).matches;
     }
 
     #setDeviceDarkMode ( deviceDarkMode ) {
@@ -167,7 +167,7 @@ export default class Theme {
         // not changed
         if ( deviceDarkMode === this.#reactive.deviceDarkMode ) return;
 
-        window.localStorage.setItem( DEVICE_DARK_MODE_KEY, deviceDarkMode );
+        globalThis.localStorage.setItem( DEVICE_DARK_MODE_KEY, deviceDarkMode );
 
         this.#reactive.deviceDarkMode = deviceDarkMode;
     }
@@ -178,7 +178,7 @@ export default class Theme {
         // not changed
         if ( darkMode === this.#reactive.darkMode ) return;
 
-        window.localStorage.setItem( DARK_MODE_KEY, darkMode );
+        globalThis.localStorage.setItem( DARK_MODE_KEY, darkMode );
 
         this.#reactive.darkMode = darkMode;
 

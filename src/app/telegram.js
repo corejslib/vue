@@ -68,7 +68,7 @@ export default class {
             "type": data.telegramBotType,
         } );
 
-        this.#user = new TelegramBotUser( this.#bot, window.Telegram.WebApp.initDataUnsafe.user );
+        this.#user = new TelegramBotUser( this.#bot, globalThis.Telegram.WebApp.initDataUnsafe.user );
 
         this.#webAppType = data.webAppType;
         this.#data = data.data;
@@ -90,7 +90,7 @@ export default class {
             script.onload = resolve;
         } );
 
-        if ( !window.Telegram.WebApp.initData ) return;
+        if ( !globalThis.Telegram.WebApp.initData ) return;
 
         // decode init data
         try {
@@ -100,7 +100,7 @@ export default class {
 
         // init data is not valid
         if ( !data ) {
-            window.Telegram.WebApp.close();
+            globalThis.Telegram.WebApp.close();
 
             return;
         }
@@ -133,11 +133,11 @@ export default class {
         if ( this.#token === undefined ) {
             this.#token = null;
 
-            if ( window.Telegram.WebApp.initData ) {
+            if ( globalThis.Telegram.WebApp.initData ) {
                 this.#token = encodeURIComponent( "telegram:" +
                         JSON.stringify( {
                             "telegram_bot_id": this.bot.id,
-                            "telegram_webapp_init_data": window.Telegram.WebApp.initData,
+                            "telegram_webapp_init_data": globalThis.Telegram.WebApp.initData,
                         } ) );
             }
         }
@@ -146,77 +146,77 @@ export default class {
     }
 
     get platform () {
-        return window.Telegram.WebApp.platform;
+        return globalThis.Telegram.WebApp.platform;
     }
 
     get isExpanded () {
-        return window.Telegram.WebApp.isExpanded;
+        return globalThis.Telegram.WebApp.isExpanded;
     }
 
     get isClosingConfirmationEnabled () {
-        return window.Telegram.WebApp.isClosingConfirmationEnabled;
+        return globalThis.Telegram.WebApp.isClosingConfirmationEnabled;
     }
 
     get isVerticalSwipesEnabled () {
-        return window.Telegram.WebApp.isVerticalSwipesEnabled;
+        return globalThis.Telegram.WebApp.isVerticalSwipesEnabled;
     }
 
     get backButton () {
-        return window.Telegram.WebApp.backButton;
+        return globalThis.Telegram.WebApp.backButton;
     }
 
     get mainButton () {
-        return window.Telegram.WebApp.mainButton;
+        return globalThis.Telegram.WebApp.mainButton;
     }
 
     get settingsButton () {
-        return window.Telegram.WebApp.settingsButton;
+        return globalThis.Telegram.WebApp.settingsButton;
     }
 
     // public
     ready () {
-        window.Telegram.WebApp.ready();
+        globalThis.Telegram.WebApp.ready();
     }
 
     expand () {
-        window.Telegram.WebApp.expand();
+        globalThis.Telegram.WebApp.expand();
     }
 
     close () {
-        window.Telegram.WebApp.close();
+        globalThis.Telegram.WebApp.close();
     }
 
     openLink ( url, { tryInstantView } = {} ) {
-        window.Telegram.WebApp.openLink( url, { "try_instant_view": tryInstantView } );
+        globalThis.Telegram.WebApp.openLink( url, { "try_instant_view": tryInstantView } );
     }
 
     openTelegramLink ( url ) {
-        window.Telegram.WebApp.openTelegramLink( url );
+        globalThis.Telegram.WebApp.openTelegramLink( url );
     }
 
     async openInvoice ( url ) {
-        return new Promise( resolve => window.Telegram.WebApp.openInvoice( url, resolve ) );
+        return new Promise( resolve => globalThis.Telegram.WebApp.openInvoice( url, resolve ) );
     }
 
     async requestContact () {
-        return new Promise( resolve => window.Telegram.WebApp.requestContact( resolve ) );
+        return new Promise( resolve => globalThis.Telegram.WebApp.requestContact( resolve ) );
     }
 
     setClosingConfirmationEnabled ( value ) {
         if ( value ) {
-            window.Telegram.WebApp.enableClosingConfirmation();
+            globalThis.Telegram.WebApp.enableClosingConfirmation();
         }
         else {
-            window.Telegram.WebApp.disableClosingConfirmation();
+            globalThis.Telegram.WebApp.disableClosingConfirmation();
         }
     }
 
     setVerticalSwipesEnabled ( value ) {
         if ( value ) {
-            window.Telegram.WebApp.enableVerticalSwipes();
+            globalThis.Telegram.WebApp.enableVerticalSwipes();
         }
         else {
-            window.Telegram.WebApp.disableVerticalSwipes();
+            globalThis.Telegram.WebApp.disableVerticalSwipes();
         }
     }
 }

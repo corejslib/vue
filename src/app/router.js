@@ -9,7 +9,7 @@ export default class Router {
         // window.onhashchange = this.reload.bind( this );
 
         try {
-            const url = new URL( window.location.hash.slice( 1 ), "http://local/" );
+            const url = new URL( globalThis.location.hash.slice( 1 ), "http://local/" );
 
             this.#path = url.pathname;
             this.#searchParams = url.searchParams;
@@ -58,19 +58,19 @@ export default class Router {
         }
 
         if ( replace ) {
-            if ( silent && window.history.replaceState ) {
-                window.history.replaceState( null, null, hash );
+            if ( silent && globalThis.history.replaceState ) {
+                globalThis.history.replaceState( null, null, hash );
             }
             else {
-                window.location.replace( hash );
+                globalThis.location.replace( hash );
             }
         }
         else {
-            if ( silent && window.history.pushState ) {
-                window.history.pushState( null, null, hash );
+            if ( silent && globalThis.history.pushState ) {
+                globalThis.history.pushState( null, null, hash );
             }
             else {
-                window.location.hash = hash;
+                globalThis.location.hash = hash;
             }
         }
     }

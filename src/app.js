@@ -43,7 +43,7 @@ export default class VueApp extends Events {
 
     // properties
     get isCordova () {
-        return !!window.cordova;
+        return !!globalThis.cordova;
     }
 
     get isDeviceReady () {
@@ -131,7 +131,7 @@ export default class VueApp extends Events {
         if ( config.apiUrl ) {
             this.#api = new Api( config.apiUrl, {
                 "locale": locale.id,
-                "token": this.telegram?.token || window.localStorage.getItem( API_TOKEN_KEY ),
+                "token": this.telegram?.token || globalThis.localStorage.getItem( API_TOKEN_KEY ),
                 "onAuthorization": this.#onAuthorization.bind( this ),
             } );
         }
@@ -145,10 +145,10 @@ export default class VueApp extends Events {
 
     async reload ( url ) {
         if ( url ) {
-            window.location.href = new URL( url, window.location.href );
+            globalThis.location.href = new URL( url, globalThis.location.href );
         }
         else {
-            window.location.reload();
+            globalThis.location.reload();
         }
 
         return new Promise( resolve => {} );
@@ -247,7 +247,7 @@ export default class VueApp extends Events {
             await this.#notifications.disablePushNotifications( false );
 
             // store api token
-            window.localStorage.setItem( API_TOKEN_KEY, res.data.token );
+            globalThis.localStorage.setItem( API_TOKEN_KEY, res.data.token );
 
             // reload
             await this.reload();
@@ -283,7 +283,7 @@ export default class VueApp extends Events {
             await this.#notifications.disablePushNotifications( false );
 
             // store api token
-            window.localStorage.setItem( API_TOKEN_KEY, res.data.token );
+            globalThis.localStorage.setItem( API_TOKEN_KEY, res.data.token );
 
             // reload
             await this.reload();
@@ -294,19 +294,19 @@ export default class VueApp extends Events {
     }
 
     getBadgeNumber () {
-        return window.FirebasePlugin?.getBadgeNumber();
+        return globalThis.FirebasePlugin?.getBadgeNumber();
     }
 
     setBadgeNumber ( number ) {
-        window.FirebasePlugin?.setBadgeNumber( number || 0 );
+        globalThis.FirebasePlugin?.setBadgeNumber( number || 0 );
     }
 
     clearBadgeNumber () {
-        window.FirebasePlugin?.setBadgeNumber( 0 );
+        globalThis.FirebasePlugin?.setBadgeNumber( 0 );
     }
 
     clearAllNotifications () {
-        window.FirebasePlugin?.clearAllNotifications();
+        globalThis.FirebasePlugin?.clearAllNotifications();
     }
 
     mask () {
@@ -378,7 +378,7 @@ export default class VueApp extends Events {
             this.#oauthWindow = null;
         }
 
-        const oauthUrl = new URL( window.location.href );
+        const oauthUrl = new URL( globalThis.location.href );
         oauthUrl.pathname = "/api/oauth.html";
         oauthUrl.search = "";
         oauthUrl.hash = "";
@@ -505,7 +505,7 @@ export default class VueApp extends Events {
             if ( doSignout ) await this.#api.call( "session/sign-out" );
 
             // drop api token
-            window.localStorage.removeItem( API_TOKEN_KEY );
+            globalThis.localStorage.removeItem( API_TOKEN_KEY );
 
             // reload
             await this.reload();

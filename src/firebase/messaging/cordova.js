@@ -12,9 +12,9 @@ export default class extends Events {
 
     // public
     async init () {
-        if ( !window.FirebasePlugin ) return;
+        if ( !globalThis.FirebasePlugin ) return;
 
-        this.#messaging = window.FirebasePlugin;
+        this.#messaging = globalThis.FirebasePlugin;
 
         this.#messaging.onMessageReceived(
             data => this.emit( "pushNotification", data ),

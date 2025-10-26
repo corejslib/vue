@@ -26,7 +26,7 @@ class Registry {
         else {
 
             // get locale from storage
-            this.#locale = window.localStorage.getItem( PARAMETER_NAME );
+            this.#locale = globalThis.localStorage.getItem( PARAMETER_NAME );
 
             if ( !this.hasLocale( this.#locale ) ) this.#locale = null;
         }
@@ -76,14 +76,14 @@ class Registry {
     }
 
     async setLocale ( app, locale ) {
-        window.localStorage.setItem( PARAMETER_NAME, locale );
+        globalThis.localStorage.setItem( PARAMETER_NAME, locale );
 
         if ( this.#locale === locale ) return;
 
         this.#locale = locale;
 
         if ( this.#urlLocale ) {
-            const url = new URL( window.location.href );
+            const url = new URL( globalThis.location.href );
 
             url.searchParams.delete( PARAMETER_NAME );
 
@@ -96,7 +96,7 @@ class Registry {
 
     // private
     get #urlLocale () {
-        return new URLSearchParams( window.location.search ).get( PARAMETER_NAME );
+        return new URLSearchParams( globalThis.location.search ).get( PARAMETER_NAME );
     }
 }
 
@@ -187,8 +187,8 @@ const locale = new Locale( { "id": registry.locale } );
 export default locale;
 
 // register globally
-window.l10n = locale.l10n.bind( locale );
-window.l10nt = locale.l10nt.bind( locale );
+globalThis.l10n = locale.l10n.bind( locale );
+globalThis.l10nt = locale.l10nt.bind( locale );
 
 // add "vue" translations
 await locale.add( language => import( /* webpackChunkName: "locales/[request]" */ `#resources/locales/${ language }.po` ) );

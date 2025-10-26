@@ -99,7 +99,7 @@ export default {
             }
 
             // append to the dom
-            if ( window.Ext && el instanceof Ext.Component ) {
+            if ( globalThis.Ext && el instanceof Ext.Component ) {
                 el.el.dom.append( vnode.el );
             }
             else {
