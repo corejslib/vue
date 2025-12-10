@@ -1,6 +1,6 @@
 <!-- !!! DO NOT EDIT, THIS FILE IS GENERATED AUTOMATICALLY !!!  -->
 
-> ℹ️ Please, see the full project documentation here:<br><https://softvisio-node.github.io/vue/>
+> ℹ️ Please, see the full project documentation here:<br><https://c0rejs.github.io/vue/>
 
 # Introduction
 
@@ -9,5 +9,5 @@
 ## Install
 
 ```sh
-npm install @softvisio/vue
+npm install @c0rejs/vue
 ```

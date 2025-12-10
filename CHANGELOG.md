@@ -1928,7 +1928,7 @@ Changed:
 
 - device events renamed;
 - $events replaced with $app;
-- @softvisio/vuex v4;
+- @c0rejs/vuex v4;
 
 ### 3.0.0-beta.14 (2021-06-17)
 

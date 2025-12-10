@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import WebpackComponent from "@softvisio/webpack/webpack-components/web-worker";
+import WebpackComponent from "@c0rejs/webpack/webpack-components/web-worker";
 import { resolve } from "#core/utils";
 
 export default class extends WebpackComponent {
@@ -27,7 +27,7 @@ export default class extends WebpackComponent {
     get webpackResolveAlias () {
         return {
             ...super.webpackResolveAlias,
-            "#vue": "@softvisio/vue",
+            "#vue": "@c0rejs/vue",
         };
     }
 

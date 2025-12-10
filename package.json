@@ -1,5 +1,5 @@
 {
-    "name": "@softvisio/vue",
+    "name": "@c0rejs/vue",
     "version": "7.9.31",
     "description": "Softisio Vue",
     "keywords": [
@@ -19,7 +19,7 @@
     "author": "root <root@softvisio.net>",
     "type": "module",
     "imports": {
-        "#core/*": "@softvisio/core/*",
+        "#core/*": "@c0rejs/core/*",
         "#resources/*": "./resources/*",
         "#src/*": {
             "browser": "./src/*",
@@ -41,7 +41,7 @@
         "/src"
     ],
     "peerDependencies": {
-        "@firebase/messaging": "^0.12.0",
-        "@softvisio/webpack": "^1.0.0"
+        "@c0rejs/webpack": "^1.0.0",
+        "@firebase/messaging": "^0.12.0"
     }
 }
