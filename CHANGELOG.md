@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.9.32 (2025-12-10)
+
+**Other changes:**
+
+- build: migrate to c0rejs namespace (● [75842e5](https://github.com/c0rejs/vue/commit/75842e5), [ed04453](https://github.com/c0rejs/vue/commit/ed04453); 👬 zdm)
+
+- chore(metadata): update package metadata (● [f516d1e](https://github.com/c0rejs/vue/commit/f516d1e); 👬 zdm)
+
+Compare with the previous release: [v7.9.31](https://github.com/c0rejs/vue/compare/v7.9.31...v7.9.32)
+
 ### v7.9.31 (2025-10-26)
 
 **Other changes:**
