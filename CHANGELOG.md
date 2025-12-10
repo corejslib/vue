@@ -4,73 +4,73 @@
 
 **Other changes:**
 
-- style: lint (● [3dedc22](https://github.com/softvisio-node/vue/commit/3dedc22); 👬 zdm)
+- style: lint (● [3dedc22](https://github.com/c0rejs/vue/commit/3dedc22); 👬 zdm)
 
-Compare with the previous release: [v7.9.30](https://github.com/softvisio-node/vue/compare/v7.9.30...v7.9.31)
+Compare with the previous release: [v7.9.30](https://github.com/c0rejs/vue/compare/v7.9.30...v7.9.31)
 
 ### v7.9.30 (2025-08-25)
 
 **Bug fixes:**
 
-- \[PATCH] fix: fix import (● [63f3db6](https://github.com/softvisio-node/vue/commit/63f3db6); 👬 zdm)
+- \[PATCH] fix: fix import (● [63f3db6](https://github.com/c0rejs/vue/commit/63f3db6); 👬 zdm)
 
-Compare with the previous release: [v7.9.29](https://github.com/softvisio-node/vue/compare/v7.9.29...v7.9.30)
+Compare with the previous release: [v7.9.29](https://github.com/c0rejs/vue/compare/v7.9.29...v7.9.30)
 
 ### v7.9.29 (2025-08-11)
 
 **Bug fixes:**
 
-- \[PATCH] fix: fix viewport import (● [7ef35d2](https://github.com/softvisio-node/vue/commit/7ef35d2), [c8a55a3](https://github.com/softvisio-node/vue/commit/c8a55a3); 👬 zdm)
+- \[PATCH] fix: fix viewport import (● [7ef35d2](https://github.com/c0rejs/vue/commit/7ef35d2), [c8a55a3](https://github.com/c0rejs/vue/commit/c8a55a3); 👬 zdm)
 
-Compare with the previous release: [v7.9.28](https://github.com/softvisio-node/vue/compare/v7.9.28...v7.9.29)
+Compare with the previous release: [v7.9.28](https://github.com/c0rejs/vue/compare/v7.9.28...v7.9.29)
 
 ### v7.9.28 (2025-07-23)
 
 **Other changes:**
 
-- style: update .npmrc (● [f853629](https://github.com/softvisio-node/vue/commit/f853629); 👬 zdm)
+- style: update .npmrc (● [f853629](https://github.com/c0rejs/vue/commit/f853629); 👬 zdm)
 
-Compare with the previous release: [v7.9.27](https://github.com/softvisio-node/vue/compare/v7.9.27...v7.9.28)
+Compare with the previous release: [v7.9.27](https://github.com/c0rejs/vue/compare/v7.9.27...v7.9.28)
 
 ### v7.9.27 (2025-07-23)
 
 **Bug fixes:**
 
-- \[PATCH] fix: update editorconfig (● [5c75078](https://github.com/softvisio-node/vue/commit/5c75078); 👬 zdm)
+- \[PATCH] fix: update editorconfig (● [5c75078](https://github.com/c0rejs/vue/commit/5c75078); 👬 zdm)
 
-Compare with the previous release: [v7.9.26](https://github.com/softvisio-node/vue/compare/v7.9.26...v7.9.27)
+Compare with the previous release: [v7.9.26](https://github.com/c0rejs/vue/compare/v7.9.26...v7.9.27)
 
 ### v7.9.26 (2025-07-22)
 
 **Bug fixes:**
 
-- \[PATCH] fix: fix editorconfig (● [0a81d16](https://github.com/softvisio-node/vue/commit/0a81d16); 👬 zdm)
+- \[PATCH] fix: fix editorconfig (● [0a81d16](https://github.com/c0rejs/vue/commit/0a81d16); 👬 zdm)
 
-Compare with the previous release: [v7.9.25](https://github.com/softvisio-node/vue/compare/v7.9.25...v7.9.26)
+Compare with the previous release: [v7.9.25](https://github.com/c0rejs/vue/compare/v7.9.25...v7.9.26)
 
 ### v7.9.25 (2025-07-16)
 
 **Other changes:**
 
-- style: lint (● [5f30241](https://github.com/softvisio-node/vue/commit/5f30241); 👬 zdm)
+- style: lint (● [5f30241](https://github.com/c0rejs/vue/commit/5f30241); 👬 zdm)
 
-Compare with the previous release: [v7.9.24](https://github.com/softvisio-node/vue/compare/v7.9.24...v7.9.25)
+Compare with the previous release: [v7.9.24](https://github.com/c0rejs/vue/compare/v7.9.24...v7.9.25)
 
 ### v7.9.24 (2025-07-16)
 
 **Other changes:**
 
-- docs: update (● [6b6a1a4](https://github.com/softvisio-node/vue/commit/6b6a1a4); 👬 zdm)
+- docs: update (● [6b6a1a4](https://github.com/c0rejs/vue/commit/6b6a1a4); 👬 zdm)
 
-Compare with the previous release: [v7.9.23](https://github.com/softvisio-node/vue/compare/v7.9.23...v7.9.24)
+Compare with the previous release: [v7.9.23](https://github.com/c0rejs/vue/compare/v7.9.23...v7.9.24)
 
 ### v7.9.23 (2025-07-03)
 
 **Code refactoring:**
 
-- \[PATCH] refactor: use url instead of uri (● [d66aee9](https://github.com/softvisio-node/vue/commit/d66aee9); 👬 zdm)
+- \[PATCH] refactor: use url instead of uri (● [d66aee9](https://github.com/c0rejs/vue/commit/d66aee9); 👬 zdm)
 
-Compare with the previous release: [v7.9.22](https://github.com/softvisio-node/vue/compare/v7.9.22...v7.9.23)
+Compare with the previous release: [v7.9.22](https://github.com/c0rejs/vue/compare/v7.9.22...v7.9.23)
 
 ### v7.9.22 (2025-06-09)
 
@@ -78,7 +78,7 @@ Compare with the previous release: [v7.9.22](https://github.com/softvisio-node/v
 
 - \[PATCH] chore: refactor build versions (👬 zdm)
 
-Compare with the previous release: [v7.9.21](https://github.com/softvisio-node/vue/compare/v7.9.21...v7.9.22)
+Compare with the previous release: [v7.9.21](https://github.com/c0rejs/vue/compare/v7.9.21...v7.9.22)
 
 ### v7.9.21 (2025-06-07)
 
@@ -86,7 +86,7 @@ Compare with the previous release: [v7.9.21](https://github.com/softvisio-node/v
 
 - \[PATCH] chore: update cli config (👬 zdm)
 
-Compare with the previous release: [v7.9.20](https://github.com/softvisio-node/vue/compare/v7.9.20...v7.9.21)
+Compare with the previous release: [v7.9.20](https://github.com/c0rejs/vue/compare/v7.9.20...v7.9.21)
 
 ### v7.9.20 (2025-06-01)
 
@@ -94,7 +94,7 @@ Compare with the previous release: [v7.9.20](https://github.com/softvisio-node/v
 
 - \[PATCH] chore: update docs (👬 zdm)
 
-Compare with the previous release: [v7.9.19](https://github.com/softvisio-node/vue/compare/v7.9.19...v7.9.20)
+Compare with the previous release: [v7.9.19](https://github.com/c0rejs/vue/compare/v7.9.19...v7.9.20)
 
 ### 7.9.19 (2025-03-26)
 
@@ -102,7 +102,7 @@ Other changes:
 
 - chore: update markdown code tags
 
-Compare with the previous release: [`v7.9.18...v7.9.19`](https://github.com/softvisio-node/vue/compare/v7.9.18...v7.9.19)
+Compare with the previous release: [`v7.9.18...v7.9.19`](https://github.com/c0rejs/vue/compare/v7.9.18...v7.9.19)
 
 ### 7.9.18 (2025-03-16)
 
@@ -110,7 +110,7 @@ Other changes:
 
 - chore: enabled ajv strict mode
 
-Compare with the previous release: [`v7.9.17...v7.9.18`](https://github.com/softvisio-node/vue/compare/v7.9.17...v7.9.18)
+Compare with the previous release: [`v7.9.17...v7.9.18`](https://github.com/c0rejs/vue/compare/v7.9.17...v7.9.18)
 
 ### 7.9.17 (2025-03-04)
 
@@ -118,7 +118,7 @@ Other changes:
 
 - chore: update package metadata
 
-Compare with the previous release: [`v7.9.16...v7.9.17`](https://github.com/softvisio-node/vue/compare/v7.9.16...v7.9.17)
+Compare with the previous release: [`v7.9.16...v7.9.17`](https://github.com/c0rejs/vue/compare/v7.9.16...v7.9.17)
 
 ### 7.9.16 (2025-03-04)
 
@@ -126,7 +126,7 @@ Other changes:
 
 - chore: update package metadata
 
-Compare with the previous release: [`v7.9.15...v7.9.16`](https://github.com/softvisio-node/vue/compare/v7.9.15...v7.9.16)
+Compare with the previous release: [`v7.9.15...v7.9.16`](https://github.com/c0rejs/vue/compare/v7.9.15...v7.9.16)
 
 ### 7.9.15 (2025-02-27)
 
@@ -134,7 +134,7 @@ Other changes:
 
 - chore: add editorconfig yaml
 
-Compare with the previous release: [`v7.9.14...v7.9.15`](https://github.com/softvisio-node/vue/compare/v7.9.14...v7.9.15)
+Compare with the previous release: [`v7.9.14...v7.9.15`](https://github.com/c0rejs/vue/compare/v7.9.14...v7.9.15)
 
 ### 7.9.14 (2025-02-26)
 
@@ -142,7 +142,7 @@ Other changes:
 
 - chore: update editorconfig
 
-Compare with the previous release: [`v7.9.13...v7.9.14`](https://github.com/softvisio-node/vue/compare/v7.9.13...v7.9.14)
+Compare with the previous release: [`v7.9.13...v7.9.14`](https://github.com/c0rejs/vue/compare/v7.9.13...v7.9.14)
 
 ### 7.9.13 (2025-02-19)
 
@@ -150,7 +150,7 @@ Other changes:
 
 - chore: update cli config
 
-Compare with the previous release: [`v7.9.12...v7.9.13`](https://github.com/softvisio-node/vue/compare/v7.9.12...v7.9.13)
+Compare with the previous release: [`v7.9.12...v7.9.13`](https://github.com/c0rejs/vue/compare/v7.9.12...v7.9.13)
 
 ### 7.9.12 (2025-01-08)
 
@@ -158,7 +158,7 @@ Other changes:
 
 - chore: update package metadata
 
-[Compare with the previous release: v7.9.11 ... v7.9.12](https://github.com/softvisio-node/vue/compare/v7.9.11...v7.9.12)
+[Compare with the previous release: v7.9.11 ... v7.9.12](https://github.com/c0rejs/vue/compare/v7.9.11...v7.9.12)
 
 ### 7.9.11 (2024-12-07)
 
@@ -166,7 +166,7 @@ Other changes:
 
 - chore: set yaml indent to 4 spaces
 
-[Compare with the previous release: v7.9.10 ... v7.9.11](https://github.com/softvisio-node/vue/compare/v7.9.10...v7.9.11)
+[Compare with the previous release: v7.9.10 ... v7.9.11](https://github.com/c0rejs/vue/compare/v7.9.10...v7.9.11)
 
 ### 7.9.10 (2024-11-27)
 
@@ -174,7 +174,7 @@ Other changes:
 
 - chore: update package metadata
 
-[Compare with the previous release: v7.9.9 ... v7.9.10](https://github.com/softvisio-node/vue/compare/v7.9.9...v7.9.10)
+[Compare with the previous release: v7.9.9 ... v7.9.10](https://github.com/c0rejs/vue/compare/v7.9.9...v7.9.10)
 
 ### 7.9.9 (2024-11-27)
 
@@ -182,7 +182,7 @@ Other changes:
 
 - chore: update package metadata
 
-[Compare with the previous release: v7.9.8 ... v7.9.9](https://github.com/softvisio-node/vue/compare/v7.9.8...v7.9.9)
+[Compare with the previous release: v7.9.8 ... v7.9.9](https://github.com/c0rejs/vue/compare/v7.9.8...v7.9.9)
 
 ### 7.9.8 (2024-11-07)
 
@@ -190,7 +190,7 @@ Other changes:
 
 - chore: update package metadata
 
-[Compare with the previous release: v7.9.7 ... v7.9.8](https://github.com/softvisio-node/vue/compare/v7.9.7...v7.9.8)
+[Compare with the previous release: v7.9.7 ... v7.9.8](https://github.com/c0rejs/vue/compare/v7.9.7...v7.9.8)
 
 ### 7.9.7 (2024-10-29)
 
@@ -198,25 +198,25 @@ Other changes:
 
 - chore: update docs
 
-[Compare with the previous release: v7.9.6 ... v7.9.7](https://github.com/softvisio-node/vue/compare/v7.9.6...v7.9.7)
+[Compare with the previous release: v7.9.6 ... v7.9.7](https://github.com/c0rejs/vue/compare/v7.9.6...v7.9.7)
 
 ### 7.9.6 (2024-10-20)
 
 No notable changes since the previous release.
 
-[Full list of the changes](https://github.com/softvisio-node/vue/compare/v7.9.5...v7.9.6)
+[Full list of the changes](https://github.com/c0rejs/vue/compare/v7.9.5...v7.9.6)
 
 ### 7.9.5 (2024-10-16)
 
 No notable changes since the previous release.
 
-[Full list of the changes](https://github.com/softvisio-node/vue/compare/v7.9.4...v7.9.5)
+[Full list of the changes](https://github.com/c0rejs/vue/compare/v7.9.4...v7.9.5)
 
 ### 7.9.4 (2024-10-11)
 
 No notable changes since the previous release.
 
-[Full list of the changes](https://github.com/softvisio-node/vue/compare/v7.9.3...v7.9.4)
+[Full list of the changes](https://github.com/c0rejs/vue/compare/v7.9.3...v7.9.4)
 
 ### 7.9.3 (2024-10-09)
 
