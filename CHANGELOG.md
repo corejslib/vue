@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.35 (2026-01-05)
+
+**Other changes:**
+
+- chore: remove npm @sencha:registry (● [8260129](https://github.com/c0rejs/vue/commit/8260129); 👬 zdm)
+
+Compare with the previous release: [v7.9.34](https://github.com/c0rejs/vue/compare/v7.9.34...v7.9.35)
+
 ### v7.9.34 (2025-12-11)
 
 **Bug fixes:**
