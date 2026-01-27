@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.36 (2026-01-27)
+
+**Other changes:**
+
+- chore(metadata): update package metadata (● [f43bc41](https://github.com/c0rejs/vue/commit/f43bc41); 👬 zdm)
+
+Compare with the previous release: [v7.9.35](https://github.com/c0rejs/vue/compare/v7.9.35...v7.9.36)
+
 ### v7.9.35 (2026-01-05)
 
 **Other changes:**
