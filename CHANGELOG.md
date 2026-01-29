@@ -1,5 +1,11 @@
 # Changelog
 
+### v7.9.38 (2026-01-29)
+
+No changes since the previous release.
+
+Compare with the previous release: [v7.9.37](https://github.com/c0rejs/vue/compare/v7.9.37...v7.9.38)
+
 ### v7.9.37 (2026-01-28)
 
 **Other changes:**
