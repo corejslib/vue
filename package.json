@@ -1,25 +1,25 @@
 {
-    "name": "@c0rejs/vue",
+    "name": "@corejslib/vue",
     "version": "7.9.38",
     "description": "Softisio Vue",
     "keywords": [
         "softvisio",
         "vue"
     ],
-    "homepage": "https://c0rejs.github.io/vue/",
+    "homepage": "https://corejslib.github.io/vue/",
     "bugs": {
-        "url": "https://github.com/c0rejs/vue/issues",
+        "url": "https://github.com/corejslib/vue/issues",
         "email": "root <root@softvisio.net>"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/c0rejs/vue.git"
+        "url": "git+https://github.com/corejslib/vue.git"
     },
     "license": "ISC",
     "author": "root <root@softvisio.net>",
     "type": "module",
     "imports": {
-        "#core/*": "@c0rejs/core/*",
+        "#core/*": "@corejslib/core/*",
         "#resources/*": "./resources/*",
         "#src/*": {
             "browser": "./src/*",
@@ -41,7 +41,7 @@
         "/src"
     ],
     "peerDependencies": {
-        "@c0rejs/webpack": "^1.0.0",
+        "@corejslib/webpack": "^1.0.0",
         "@firebase/messaging": "^0.12.0"
     }
 }

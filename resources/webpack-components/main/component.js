@@ -1,4 +1,4 @@
-import WebpackComponent from "@c0rejs/webpack/webpack-components/web";
+import WebpackComponent from "@corejslib/webpack/webpack-components/web";
 
 export default class extends WebpackComponent {
 
@@ -7,8 +7,8 @@ export default class extends WebpackComponent {
         return {
             ...super.webpackResolveAlias,
             "vue$": "vue/dist/vue.runtime.esm-bundler.js",
-            "#vue": "@c0rejs/vue",
-            "#app": "@c0rejs/vue/app-instance",
+            "#vue": "@corejslib/vue",
+            "#app": "@corejslib/vue/app-instance",
         };
     }
 
