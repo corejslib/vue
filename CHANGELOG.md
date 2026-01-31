@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.39 (2026-01-31)
+
+**Other changes:**
+
+- chore: rename package (● [5bc275a](https://github.com/corejslib/vue/commit/5bc275a); 👬 zdm)
+
+Compare with the previous release: [v7.9.38](https://github.com/corejslib/vue/compare/v7.9.38...v7.9.39)
+
 ### v7.9.38 (2026-01-29)
 
 No changes since the previous release.
