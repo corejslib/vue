@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.40 (2026-02-05)
+
+**Other changes:**
+
+- chore: remove @zdm npm registry (● [26e7f6e](https://github.com/corejslib/vue/commit/26e7f6e); 👬 zdm)
+
+Compare with the previous release: [v7.9.39](https://github.com/corejslib/vue/compare/v7.9.39...v7.9.40)
+
 ### v7.9.39 (2026-01-31)
 
 **Other changes:**
