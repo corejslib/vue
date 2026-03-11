@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.42 (2026-03-11)
+
+**Bug fixes:**
+
+- \[PATCH] fix: migrate eslint-plugin-import to eslint-plugin-import-x (● [8109071](https://github.com/corejslib/vue/commit/8109071); 👬 zdm)
+
+Compare with the previous release: [v7.9.41](https://github.com/corejslib/vue/compare/v7.9.41...v7.9.42)
+
 ### v7.9.41 (2026-03-06)
 
 **Other changes:**
