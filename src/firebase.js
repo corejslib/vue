@@ -8,6 +8,7 @@ var api;
 
 import WebApi from "./firebase/messaging/web.js";
 
+// eslint-disable-next-line no-useless-assignment
 api = await WebApi.new();
 
 // #!elseif isCordova === true

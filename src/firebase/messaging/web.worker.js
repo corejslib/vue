@@ -48,6 +48,7 @@ class Handler {
 
         // client not found, open new window
         else {
+            // eslint-disable-next-line no-useless-assignment
             client = globalThis.clients.openWindow( url );
         }
 
