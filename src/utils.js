@@ -1,3 +1,5 @@
+import { isPlainObject } from "#core/utils";
+
 export * from "#core/utils";
 
 export function copyToClipboard ( str ) {
@@ -29,40 +31,67 @@ export function clickUrl ( url ) {
     el.remove();
 }
 
-export function saveAs ( url ) {
-    var name, type, content;
+export async function saveAs ( url ) {
+    var filename;
 
-    if ( typeof url === "string" ) url = new URL( url );
+    // plain object
+    if ( isPlainObject( url ) ) {
+        let content, type;
 
+        ( { url, filename, content, type } = url );
+
+        if ( !url ) {
+            url = new Blob( [ content ], { type } );
+        }
+    }
+
+    // string
+    if ( typeof url === "string" ) {
+        url = new URL( url, globalThis.location.href );
+    }
+
+    // URL
     if ( url instanceof URL ) {
+
+        // data: url
         if ( url.protocol === "data:" ) {
             if ( url.search ) {
                 url = new URL( url );
 
-                name = url.searchParams.get( "name" );
+                filename = url.searchParams.get( "filename" );
 
                 url.search = "";
             }
         }
     }
-    else {
-        ( { url, name, type, content } = url );
 
-        url ||= "data:" + type + "," + encodeURIComponent( content );
+    // Response
+    else if ( url instanceof Response ) {
+        url = URL.createObjectURL( await url.blob() );
+
+        // XXX parse content-disposition
+    }
+
+    // Blob
+    else if ( url instanceof Blob ) {
+        url = URL.createObjectURL( url );
     }
 
     const el = document.createElement( "a" );
 
-    el.setAttribute( "target", "_blank" );
-    el.setAttribute( "download", name );
     el.setAttribute( "href", url );
+    el.setAttribute( "download", filename );
+    el.setAttribute( "target", "_blank" );
 
     el.style.display = "none";
     document.body.append( el );
 
+    // download
     el.click();
 
+    // cleanup
     el.remove();
+    URL.revokeObjectURL( url );
 }
 
 export async function alert ( message, { title } = {} ) {
