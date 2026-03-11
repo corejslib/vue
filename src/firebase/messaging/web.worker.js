@@ -1,4 +1,4 @@
-/* eslint-disable import/first  */
+/* eslint-disable import-x/first  */
 
 import { initializeApp } from "@firebase/app";
 import { getMessaging, onBackgroundMessage } from "@firebase/messaging/sw";
