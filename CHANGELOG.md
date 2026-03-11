@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.43 (2026-03-11)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix utils.saveAs() (● [5a03e5a](https://github.com/corejslib/vue/commit/5a03e5a), [f891001](https://github.com/corejslib/vue/commit/f891001); 👬 zdm)
+
+Compare with the previous release: [v7.9.42](https://github.com/corejslib/vue/compare/v7.9.42...v7.9.43)
+
 ### v7.9.42 (2026-03-11)
 
 **Bug fixes:**
