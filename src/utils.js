@@ -2,6 +2,7 @@ import { isPlainObject } from "#core/utils";
 
 export * from "#core/utils";
 
+// public
 export function copyToClipboard ( str ) {
     const el = document.createElement( "textarea" );
 
@@ -67,9 +68,9 @@ export async function saveAs ( url ) {
 
     // Response
     else if ( url instanceof Response ) {
-        url = URL.createObjectURL( await url.blob() );
+        filename = parseContentDispositionFilename( url.headers.get( "content-disposition" ) );
 
-        // XXX parse content-disposition
+        url = URL.createObjectURL( await url.blob() );
     }
 
     // Blob
@@ -114,4 +115,35 @@ export function toast ( msg, timeout ) {
 
 export function labelError ( text ) {
     return `<span style="background-color:red;color:white">&nbsp;${ text }&nbsp;</span>`;
+}
+
+// private
+function parseContentDispositionFilename ( header ) {
+    if ( !header ) return;
+
+    const params = {};
+
+    for ( const param of header.split( ";" ) ) {
+        const [ key, value ] = param.split( "=" );
+
+        params[ key?.trim() ] = value?.trim();
+    }
+
+    if ( params[ "filename*" ] ) {
+        const match = params[ "filename*" ].match( /^(?<encoding>[\dA-Za-z-]+)'(?<language>[A-Z_a-z]*)'(?<value>.+)/ );
+
+        if ( match ) {
+            return decodeURIComponent( match.groups.value );
+        }
+    }
+
+    if ( params[ "filename" ] ) {
+
+        // unquote
+        if ( params[ "filename" ].startsWith( '"' ) && params[ "filename" ].endsWith( '"' ) ) {
+            params[ "filename" ] = params[ "filename" ].slice( 1, -1 );
+        }
+
+        return params[ "filename" ].replaceAll( /%0a/gi, "\n" ).replaceAll( /%0d/gi, "\r" ).replaceAll( "%22", '"' );
+    }
 }
