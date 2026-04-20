@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.46 (2026-04-20)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: update .editorconfig (● [19b5305](https://github.com/corejslib/vue/commit/19b5305); 👬 zdm)
+
+Compare with the previous release: [v7.9.45...v7.9.46](https://github.com/corejslib/vue/compare/v7.9.45...v7.9.46)
+
 ### v7.9.45 (2026-03-18)
 
 **Other changes:**
