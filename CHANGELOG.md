@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.47 (2026-05-07)
+
+**Other changes:**
+
+- chore: update translations (● [305a51f](https://github.com/corejslib/vue/commit/305a51f); 👬 zdm)
+
+Compare with the previous release: [v7.9.46...v7.9.47](https://github.com/corejslib/vue/compare/v7.9.46...v7.9.47)
+
 ### v7.9.46 (2026-04-20)
 
 **Code refactoring:**
