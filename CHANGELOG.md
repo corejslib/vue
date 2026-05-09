@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.49 (2026-05-09)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor uuid (● [327e747](https://github.com/corejslib/vue/commit/327e747); 👬 zdm)
+
+Compare with the previous release: [v7.9.48...v7.9.49](https://github.com/corejslib/vue/compare/v7.9.48...v7.9.49)
+
 ### v7.9.48 (2026-05-07)
 
 **Code refactoring:**
