@@ -2,7 +2,7 @@ import Api from "#core/api";
 import Events from "#core/events";
 import result from "#core/result";
 import Mutex from "#core/threads/mutex";
-import uuid from "#core/uuid";
+import Uuid from "#core/uuid";
 import Router from "#src/app/router";
 import Telegram from "#src/app/telegram";
 import Theme from "#src/app/theme";
@@ -383,7 +383,7 @@ export default class VueApp extends Events {
         oauthUrl.search = "";
         oauthUrl.hash = "";
 
-        const state = uuid();
+        const state = Uuid.v4();
 
         var providerUrl;
 
