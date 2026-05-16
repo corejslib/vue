@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.51 (2026-05-16)
+
+**Other changes:**
+
+- docs: update (● [ad3741a](https://github.com/corejslib/vue/commit/ad3741a); 👬 zdm)
+
+Compare with the previous release: [v7.9.50...v7.9.51](https://github.com/corejslib/vue/compare/v7.9.50...v7.9.51)
+
 ### v7.9.50 (2026-05-16)
 
 **Other changes:**
