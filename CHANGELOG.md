@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.53 (2026-05-29)
+
+**Other changes:**
+
+- build(deps): bunp @firebase/messaging@^0.13.0 (● [d6793d2](https://github.com/corejslib/vue/commit/d6793d2); 👬 zdm)
+
+Compare with the previous release: [v7.9.52...v7.9.53](https://github.com/corejslib/vue/compare/v7.9.52...v7.9.53)
+
 ### v7.9.52 (2026-05-28)
 
 **Other changes:**
