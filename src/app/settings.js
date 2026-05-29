@@ -68,8 +68,8 @@ export default class Settings {
         return this.#settings.push_notifications_prefix;
     }
 
-    get passwordsStrength () {
-        return this.#settings.passwords_strength;
+    get allowWeakPasswords () {
+        return this.#settings.allow_weak_passwords;
     }
 
     get components () {
