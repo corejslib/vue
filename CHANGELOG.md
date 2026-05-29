@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.54 (2026-05-29)
+
+**Code refactoring:**
+
+- \[PATCH] refactor: refactor passwords (● [f486e8e](https://github.com/corejslib/vue/commit/f486e8e); 👬 zdm)
+
+Compare with the previous release: [v7.9.53...v7.9.54](https://github.com/corejslib/vue/compare/v7.9.53...v7.9.54)
+
 ### v7.9.53 (2026-05-29)
 
 **Other changes:**
