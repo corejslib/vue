@@ -42,6 +42,6 @@
     ],
     "peerDependencies": {
         "@corejslib/webpack": "^1.0.0",
-        "@firebase/messaging": "^0.12.0"
+        "@firebase/messaging": "^0.13.0"
     }
 }
