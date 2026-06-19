@@ -80,4 +80,4 @@ const messaging = getMessaging( firebaseApp );
 
 onBackgroundMessage( messaging, handler.onBackgoundMessage.bind( handler ) );
 
-self.addEventListener( "notificationclick", event => event.waitUntil( handler.onClick( event ) ) );
+globalThis.addEventListener( "notificationclick", event => event.waitUntil( handler.onClick( event ) ) );
