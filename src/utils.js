@@ -130,7 +130,7 @@ function parseContentDispositionFilename ( header ) {
     }
 
     if ( params[ "filename*" ] ) {
-        const match = params[ "filename*" ].match( /^(?<encoding>[\dA-Za-z-]+)'(?<language>[A-Z_a-z]*)'(?<value>.+)/ );
+        const match = params[ "filename*" ].match( /^(?<encoding>[\dA-Za-z\-]+)'(?<language>[A-Z_a-z]*)'(?<value>.+)/v );
 
         if ( match ) {
             return decodeURIComponent( match.groups.value );
@@ -144,6 +144,6 @@ function parseContentDispositionFilename ( header ) {
             params[ "filename" ] = params[ "filename" ].slice( 1, -1 );
         }
 
-        return params[ "filename" ].replaceAll( /%0a/gi, "\n" ).replaceAll( /%0d/gi, "\r" ).replaceAll( "%22", '"' );
+        return params[ "filename" ].replaceAll( /%0a/giv, "\n" ).replaceAll( /%0d/giv, "\r" ).replaceAll( "%22", '"' );
     }
 }
