@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.9.57 (2026-07-02)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix md \_ escape (● [8965f46](https://github.com/corejslib/vue/commit/8965f46); 👬 zdm)
+
+Compare with the previous release: [v7.9.56...v7.9.57](https://github.com/corejslib/vue/compare/v7.9.56...v7.9.57)
+
 ### v7.9.56 (2026-06-21)
 
 **Other changes:**
