@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.1 (2026-09-11)
+
+**Bug fixes:**
+
+- \[PATCH] fix: update locales po (● [7292a9b](https://github.com/corejslib/vue/commit/7292a9b); 👬 zdm)
+
+Compare with the previous release: [v7.10.0...v7.10.1](https://github.com/corejslib/vue/compare/v7.10.0...v7.10.1)
+
 ### v7.10.0 (2026-08-27)
 
 **New features:**
