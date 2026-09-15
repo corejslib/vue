@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.2 (2026-09-15)
+
+**Bug fixes:**
+
+- \[PATCH] fix: update app imports to corejslib aliases (● [caf4ec1](https://github.com/corejslib/vue/commit/caf4ec1); 👬 zdm)
+
+Compare with the previous release: [v7.10.1...v7.10.2](https://github.com/corejslib/vue/compare/v7.10.1...v7.10.2)
+
 ### v7.10.1 (2026-09-11)
 
 **Bug fixes:**
