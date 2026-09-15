@@ -1,6 +1,6 @@
+import constants from "@corejslib/app/constants";
+import Permissions from "@corejslib/app/user/permissions";
 import { reactive } from "vue";
-import constants from "#core/app/constants";
-import Permissions from "#core/app/user/permissions";
 
 export default class User {
     #app;
