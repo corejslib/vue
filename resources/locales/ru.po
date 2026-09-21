@@ -42,8 +42,8 @@ msgstr "Сессия закрыта"
 
 #: ../../src/app.js:348:33
 msgid "Unable to connect to the API server. Check, that you have internet connection."
-msgstr "Не удалось подключиться к серверу API. Проверьте, что у вас есть подключение к интернет."
+msgstr "Не удалось подключиться к серверу API. Проверьте, что у вас есть подключение к интернету."
 
 #: ../../src/app.js:356:32
 msgid "Your session was terminated on the API server."
-msgstr "Ваша сессия былп прервана API серввером."
+msgstr "Ваша сессия была прервана API сервером."
