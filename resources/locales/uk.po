@@ -38,7 +38,7 @@ msgstr "Push повідомлення не підтримуються"
 
 #: ../../src/app.js:357:21
 msgid "Session closed"
-msgstr "Сесія закрита"
+msgstr "Сесію закрито"
 
 #: ../../src/app.js:348:33
 msgid "Unable to connect to the API server. Check, that you have internet connection."
@@ -46,4 +46,4 @@ msgstr "Не вдається підключитися до сервера API. 
 
 #: ../../src/app.js:356:32
 msgid "Your session was terminated on the API server."
-msgstr "Ваша сесія був припинений на сервері API."
+msgstr "Ваша сесія була припинена на сервері API."
