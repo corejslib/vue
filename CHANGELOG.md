@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.10.3 (2026-09-21)
+
+**Bug fixes:**
+
+- \[PATCH] fix: correct Russian locale strings (● [cb78e52](https://github.com/corejslib/vue/commit/cb78e52); 👬 zdm)
+
+- \[PATCH] fix: correct Ukrainian session status translations (● [4c4e9b6](https://github.com/corejslib/vue/commit/4c4e9b6); 👬 zdm)
+
+Compare with the previous release: [v7.10.2...v7.10.3](https://github.com/corejslib/vue/compare/v7.10.2...v7.10.3)
+
 ### v7.10.2 (2026-09-15)
 
 **Bug fixes:**
