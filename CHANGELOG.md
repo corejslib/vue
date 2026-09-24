@@ -1,5 +1,20 @@
 # Changelog
 
+### v7.10.4 (2026-09-24)
+
+**Bug fixes:**
+
+- \[PATCH] fix: correct connection and notification copy (● [6aa8b19](https://github.com/corejslib/vue/commit/6aa8b19); 👬 zdm)
+
+    - Update the API connection error text to proper grammar.
+    - Refresh the Russian and Ukrainian locale strings for push notification and session wording.
+
+**Other changes:**
+
+- chore: update translations (● [5826e2f](https://github.com/corejslib/vue/commit/5826e2f); 👬 zdm)
+
+Compare with the previous release: [v7.10.3...v7.10.4](https://github.com/corejslib/vue/compare/v7.10.3...v7.10.4)
+
 ### v7.10.3 (2026-09-21)
 
 **Bug fixes:**
