@@ -1,5 +1,5 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
-"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: \n"
 "X-Search-Path: /src/**\n"
