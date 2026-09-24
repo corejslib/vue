@@ -345,7 +345,7 @@ export default class VueApp extends Events {
     async _onConnectionError ( res ) {
         if ( res ) this.utils.toast( res );
 
-        return this.utils.alert( l10n( "Unable to connect to the API server. Check, that you have internet connection." ), {
+        return this.utils.alert( l10n( "Unable to connect to the API server. Check that you have an internet connection." ), {
             "title": l10n( "Connection error" ),
         } );
     }

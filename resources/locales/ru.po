@@ -18,24 +18,24 @@ msgstr "Ошибка подключения"
 
 #: ../../src/app/notifications.js:128:50
 msgid "Error disabling push notifications"
-msgstr "Ошибка при отключении push уведомлений"
+msgstr "Ошибка отключения push-уведомлений"
 
 #: ../../src/app/notifications.js:194:34
 msgid "Push notifications are disabled in the browser settings"
-msgstr "Push уведомления заблокированы в настройках браузера"
+msgstr "Push-уведомления отключены в настройках браузера"
 
 #: ../../src/app/notifications.js:124:62 ../../src/app/notifications.js:186:70
 msgid "Push notifications are not supported"
-msgstr "Push уведомления не поддерживаются"
+msgstr "Push-уведомления не поддерживаются"
 
 #: ../../src/app.js:357:21
 msgid "Session closed"
 msgstr "Сессия закрыта"
 
 #: ../../src/app.js:348:33
-msgid "Unable to connect to the API server. Check, that you have internet connection."
+msgid "Unable to connect to the API server. Check that you have an internet connection."
 msgstr "Не удалось подключиться к серверу API. Проверьте, что у вас есть подключение к интернету."
 
 #: ../../src/app.js:356:32
 msgid "Your session was terminated on the API server."
-msgstr "Ваша сессия была прервана API сервером."
+msgstr "Ваша сессия была завершена на сервере API."
