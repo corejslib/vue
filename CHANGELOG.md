@@ -1,5 +1,15 @@
 # Changelog
 
+### v7.10.6 (2026-09-27)
+
+**Other changes:**
+
+- Revert "chore: remove .pot" (● [73528ce](https://github.com/corejslib/vue/commit/73528ce); 👬 zdm)
+
+    This reverts commit [010f019](https://github.com/corejslib/vue/commit/010f019e76b3c677509be1e041ce84ea22a8f38c).
+
+Compare with the previous release: [v7.10.5...v7.10.6](https://github.com/corejslib/vue/compare/v7.10.5...v7.10.6)
+
 ### v7.10.5 (2026-09-27)
 
 **Other changes:**
