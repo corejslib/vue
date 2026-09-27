@@ -1,0 +1,5 @@
+msgid ""
+msgstr ""
+"Language: \n"
+"Plural-Forms: \n"
+"X-Search-Path: /src/**\n"
