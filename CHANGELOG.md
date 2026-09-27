@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.5 (2026-09-27)
+
+**Other changes:**
+
+- chore: remove .pot (● [010f019](https://github.com/corejslib/vue/commit/010f019); 👬 zdm)
+
+Compare with the previous release: [v7.10.4...v7.10.5](https://github.com/corejslib/vue/compare/v7.10.4...v7.10.5)
+
 ### v7.10.4 (2026-09-24)
 
 **Bug fixes:**
