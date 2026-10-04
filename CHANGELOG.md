@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.7 (2026-10-04)
+
+**Other changes:**
+
+- docs: correct escaped snake_case in md (● [73c427c](https://github.com/corejslib/vue/commit/73c427c); 👬 zdm)
+
+Compare with the previous release: [v7.10.6...v7.10.7](https://github.com/corejslib/vue/compare/v7.10.6...v7.10.7)
+
 ### v7.10.6 (2026-09-27)
 
 **Other changes:**
