@@ -1,5 +1,6 @@
 msgid ""
 msgstr ""
 "Language: \n"
+"PO-Revision-Date: \n"
 "Plural-Forms: \n"
 "X-Search-Path: /src/**\n"
