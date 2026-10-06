@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.8 (2026-10-06)
+
+**Other changes:**
+
+- chore: update .pot template (● [679db90](https://github.com/corejslib/vue/commit/679db90); 👬 zdm)
+
+Compare with the previous release: [v7.10.7...v7.10.8](https://github.com/corejslib/vue/compare/v7.10.7...v7.10.8)
+
 ### v7.10.7 (2026-10-04)
 
 **Other changes:**
