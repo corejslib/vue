@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.10 (2026-10-07)
+
+**Other changes:**
+
+- chore: update translations (● [5b5bc2e](https://github.com/corejslib/vue/commit/5b5bc2e); 👬 zdm)
+
+Compare with the previous release: [v7.10.9...v7.10.10](https://github.com/corejslib/vue/compare/v7.10.9...v7.10.10)
+
 ### v7.10.9 (2026-10-07)
 
 **Other changes:**
