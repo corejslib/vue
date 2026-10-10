@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.11 (2026-10-10)
+
+**Bug fixes:**
+
+- \[PATCH] fix: fix plural forms (● [db185ae](https://github.com/corejslib/vue/commit/db185ae); 👬 zdm)
+
+Compare with the previous release: [v7.10.10...v7.10.11](https://github.com/corejslib/vue/compare/v7.10.10...v7.10.11)
+
 ### v7.10.10 (2026-10-07)
 
 **Other changes:**
