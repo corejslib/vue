@@ -3,7 +3,7 @@ env:
 build:
 
 config:
-  apiUrl: /api/
+  apiUrl: /api
 
   title: ~
   titleIcon: ~
