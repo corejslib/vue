@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.12 (2026-10-19)
+
+**Bug fixes:**
+
+- \[PATCH] fix: remove trailing slash from API URL base path (● [2657c5f](https://github.com/corejslib/vue/commit/2657c5f); 👬 zdm)
+
+Compare with the previous release: [v7.10.11...v7.10.12](https://github.com/corejslib/vue/compare/v7.10.11...v7.10.12)
+
 ### v7.10.11 (2026-10-10)
 
 **Bug fixes:**
