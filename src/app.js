@@ -380,7 +380,7 @@ export default class VueApp extends Events {
         }
 
         const oauthUrl = new URL( globalThis.location.href );
-        oauthUrl.pathname = "/api/oauth.html";
+        oauthUrl.pathname = "/oauth.html";
         oauthUrl.search = "";
         oauthUrl.hash = "";
 
