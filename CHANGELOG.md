@@ -1,5 +1,13 @@
 # Changelog
 
+### v7.10.13 (2026-11-13)
+
+**Bug fixes:**
+
+- \[PATCH] fix: use root paths for API and OAuth endpoints (● [d37ba3d](https://github.com/corejslib/vue/commit/d37ba3d); 👬 zdm)
+
+Compare with the previous release: [v7.10.12...v7.10.13](https://github.com/corejslib/vue/compare/v7.10.12...v7.10.13)
+
 ### v7.10.12 (2026-10-19)
 
 **Bug fixes:**
