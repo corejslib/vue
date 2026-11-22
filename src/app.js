@@ -434,41 +434,53 @@ export default class VueApp extends Events {
 
         if ( !providerUrl ) return result( [ 400, l10n( "Authorization provider is not supported" ) ] );
 
-        const oauthWindow = ( this.#oauthWindow = window.open( oauthUrl, null, "toolbar=no, menubar=no, width=600, height=700" ) );
+        const oauthWindow = window.open( oauthUrl, "_blank", "toolbar=no, menubar=no, width=600, height=700" );
+
+        if ( !oauthWindow ) return result( [ 400, l10n( "Unable to open authorization window" ) ] );
+
+        this.#oauthWindow = oauthWindow;
+
         oauthWindow.focus();
 
+        const abortController = new AbortController();
+
         const params = await new Promise( resolve => {
-            const interval = setInterval( () => {
-                if ( !oauthWindow.closed ) return;
-
-                clearInterval( interval );
-
-                resolve( false );
-            }, 300 );
-
-            window.addEventListener( "message", e => {
-                if ( e.source !== oauthWindow ) return;
-
-                if ( e.data?.action === "begin" ) {
-                    oauthWindow.postMessage( { "providerUrl": providerUrl.href } );
-                }
-                else if ( e.data?.action === "end" ) {
+            const finish = value => {
                     clearInterval( interval );
 
-                    oauthWindow.close();
+                    // remove all listeners
+                    abortController.abort();
 
-                    resolve( e.data?.params
-                        ? new URLSearchParams( e.data.params )
-                        : false );
-                }
-                else {
-                    clearInterval( interval );
+                    if ( !oauthWindow.closed ) oauthWindow.close();
 
-                    oauthWindow.close();
+                    resolve( value );
+                },
+                interval = setInterval( () => {
+                    if ( oauthWindow.closed ) finish( false );
+                }, 300 );
 
-                    resolve( false );
-                }
-            } );
+            window.addEventListener(
+                "message",
+                e => {
+                    if ( e.source !== oauthWindow ) return;
+
+                    if ( e.data?.action === "begin" ) {
+                        oauthWindow.postMessage( { "providerUrl": providerUrl.href } );
+                    }
+                    else if ( e.data?.action === "end" ) {
+                        finish( e.data?.params
+                            ? new URLSearchParams( e.data.params )
+                            : false );
+                    }
+                    else {
+                        finish( false );
+                    }
+                },
+                { "signal": abortController.signal }
+            );
+
+            // the oauth window can not close itself while it is on the provider page, so close it when the opener is unloaded or reloaded
+            window.addEventListener( "pagehide", () => finish( false ), { "signal": abortController.signal } );
         } );
 
         if ( !params ) return result( [ 400, l10n( "Authorization cancelled" ) ] );
