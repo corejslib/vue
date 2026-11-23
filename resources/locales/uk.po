@@ -42,7 +42,7 @@ msgstr "Не вдається підключитися до сервера API. 
 
 #: ../../src/app.js:439:50
 msgid "Unable to open authorization window"
-msgstr ""
+msgstr "Не вдалося відкрити вікно авторизації"
 
 #: ../../src/app.js:356:32
 msgid "Your session was terminated on the API server."
