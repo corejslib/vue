@@ -1,5 +1,19 @@
 # Changelog
 
+### v7.10.14 (2026-11-23)
+
+**Bug fixes**:
+
+- \[PATCH] fix: handle oauth popup lifecycle safely (● [2ec54d7](https://github.com/corejslib/vue/commit/2ec54d7); 👬 zdm)
+
+**Other changes**:
+
+- chore: update Russian and Ukrainian localization catalogs (● [3b3590c](https://github.com/corejslib/vue/commit/3b3590c); 👬 zdm)
+
+- docs: translate authorization window messages (● [30c0555](https://github.com/corejslib/vue/commit/30c0555); 👬 zdm)
+
+Compare with the previous release: [v7.10.13...v7.10.14](https://github.com/corejslib/vue/compare/v7.10.13...v7.10.14)
+
 ### v7.10.13 (2026-11-13)
 
 **Bug fixes:**
