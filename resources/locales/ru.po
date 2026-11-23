@@ -1,12 +1,13 @@
 msgid ""
 msgstr ""
 "Language: ru\n"
+"PO-Revision-Date: 2026-11-23T01:08:06.947224121Z\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Search-Path: /src/**\n"
 
-#: ../../src/app.js:474:45
-#: ../../src/app.js:476:59
-#: ../../src/app.js:478:69
+#: ../../src/app.js:486:45
+#: ../../src/app.js:488:59
+#: ../../src/app.js:490:69
 msgid "Authorization cancelled"
 msgstr "Авторизация отменена"
 
@@ -38,6 +39,10 @@ msgstr "Сессия закрыта"
 #: ../../src/app.js:348:33
 msgid "Unable to connect to the API server. Check that you have an internet connection."
 msgstr "Не удалось подключиться к серверу API. Проверьте, что у вас есть подключение к интернету."
+
+#: ../../src/app.js:439:50
+msgid "Unable to open authorization window"
+msgstr ""
 
 #: ../../src/app.js:356:32
 msgid "Your session was terminated on the API server."
